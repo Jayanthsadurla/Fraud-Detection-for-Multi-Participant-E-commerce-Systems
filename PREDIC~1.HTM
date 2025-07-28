@@ -1,0 +1,179 @@
+{% extends 'RUser/Header.html' %}
+{% block userblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 904px;
+    height: 202px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style4 {color: #FFFF00; font-weight: bold; }
+.style6 {
+	font-size: 24px;
+	color: #FFFF00;
+	font-weight: bold;
+}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+
+                   <form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center style1">PREDICTION OF FRAUD FOUND IN ECOMMERCE TRANSACTION STATUS!!! </p>
+                            <hr>
+
+                                {% csrf_token %}
+                                <table width="568" align="center">
+                                  <tr>
+                                    <td height="44" colspan="2" bgcolor="#FF0000"><div align="center" class="style4">ENTER DATASET DETAILS HERE !!! </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="287" height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter Order_ID</div></td>
+                                    <td width="269"><input type="text" name="Order_ID"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter PDate</div></td>
+                                    <td><input type="text" name="PDate"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter Status</span></div></td>
+                                    <td><input type="text" name="Status"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter Fulfilment</span></div></td>
+                                    <td><input type="text" name="Fulfilment"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter Sales_Channel</span></div></td>
+                                    <td><input type="text" name="Sales_Channel"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter ship_service_level</span></div></td>
+                                    <td><input type="text" name="ship_service_level"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter Style</span></div></td>
+                                    <td><input type="text" name="Style"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter SKU </span></div></td>
+                                    <td><input type="text" name="SKU"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter Category </span></div></td>
+                                    <td><input type="text" name="Category"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter PSize</span></div></td>
+                                    <td><input type="text" name="PSize"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter ASIN</span></div></td>
+                                    <td><input type="text" name="ASIN"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter Qty</span></div></td>
+                                    <td><input type="text" name="Qty"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter </span> <span class="style4">currency</span></div></td>
+                                    <td><input type="text" name="currency"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter </span> <span class="style4">Amount </span></div></td>
+                                    <td><input type="text" name="Amount"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter </span> <span class="style4">payment_by</span></div></td>
+                                    <td><input type="text" name="payment_by"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter </span> <span class="style4">ship_city</span></div></td>
+                                    <td><input type="text" name="ship_city"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter </span> <span class="style4">ship_state</span></div></td>
+                                    <td><input type="text" name="ship_state"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter </span> <span class="style4">ship_postal_code</span></div></td>
+                                    <td><input type="text" name="ship_postal_code"></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter  ship_country</span></div></td>
+                                    <td><input type="text" name="ship_country"></td>
+                                  </tr>
+  <td><p>&nbsp; </p>
+          <p>
+            <input name="submit" type="submit" class="style1" value="Predict">
+        </p></td>
+  </tr>
+                                </table>
+					 </fieldset>
+				  </form>
+
+
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+
+                            <hr>
+                            <div>
+                              <table width="877" height="47" border="0" align="center" >
+                                    <tr><td width="563" bgcolor="#FF0000"><div align="center"><span class="style6">ECommerce Transaction Fraud Found Status  </span> <span class="style4">:: </span></div></td>
+
+
+
+                                      <td width="304" bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{objs}}</div></td></tr>
+                      </table>
+
+
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
