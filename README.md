@@ -1,4 +1,4 @@
-# 🛡️ Multi-Perspective Fraud Detection for Multi-Participant E-commerce
+# 🛡️ Fraud-Detection-for-Multi-Participant-E-commerce-Systems
 
 This project is an intelligent web application for detecting fraud in e-commerce platforms involving multiple users like Remote Users and Service Providers. It uses machine learning and rule-based logic to uncover fraud patterns.
 
