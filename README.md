@@ -13,7 +13,6 @@ It provides role-based interfaces for remote users and service providers, includ
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [Backend Setup](#backend-setup)
-- [Using the Application](#Using the Application)
 - [Dataset](#Dataset)
 - [Developer](#Developer)
 
