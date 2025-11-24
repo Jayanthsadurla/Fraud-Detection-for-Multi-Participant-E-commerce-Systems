@@ -1,29 +1,29 @@
 Fraud Detection for Multi-Participant E-commerce Systems
 Overview
 
-This project implements a fraud detection system designed for multi-participant e-commerce platforms. The system analyzes user behavior, transaction patterns, content features, and interaction signals to identify potential fraudulent activities. It integrates machine learning and deep learning techniques to classify fraud-related risks and support decision-making for service providers and administrators.
+This project implements a fraud detection system designed for multi-participant e-commerce platforms. It analyzes user behavior, transaction patterns, content features, and interaction signals to identify potential fraudulent activities. The system uses machine learning and deep learning techniques to classify fraud-related risks and assist service providers and administrators.
 
-The model is trained using structured datasets and provides predictions through a user interface designed for both remote users and service providers. Additional features include visualization dashboards, user registration, login modules, and fraud ratio reporting.
+The model is trained using structured datasets and provides predictions through user interfaces designed for both remote users and service providers. Additional components include dashboards, registration modules, login pages, fraud ratio reporting, and dataset-driven model training.
 
 Features
 
-Machine learning and deep learning models for fraud prediction.
+Machine learning and deep learning models for fraud prediction
 
-Multi-participant interaction analysis.
+Multi-participant interaction analysis
 
-User authentication and role-based interfaces.
+User authentication and role-based interfaces
 
-Data preprocessing and feature extraction pipelines.
+Data preprocessing and feature extraction pipelines
 
-Fraud ratio visualization for service providers.
+Fraud ratio visualization dashboards
 
-Model training interface with dataset upload functionality.
+Dataset upload and model training interface
 
-Real-time prediction module for remote users.
+Real-time fraud prediction for remote users
 
-SQL database support for storing user and fraud data.
+SQL database support for storing user and fraud data
 
-Template-based web interface for user and admin panels.
+Template-based web interface for both user and admin modules
 
 Technologies Used
 
@@ -31,15 +31,13 @@ Python
 
 Django Framework
 
-HTML, CSS
+HTML and CSS
 
 SQL Database
 
-Machine Learning Libraries
-(Scikit-learn, Pandas, NumPy)
+Pandas, NumPy, Scikit-learn
 
-Data Visualization
-(Matplotlib)
+Matplotlib for charts
 
 Project Structure
 A_Multiperspective_Fraud_Detection/
@@ -59,77 +57,52 @@ A_Multiperspective_Fraud_Detection/
 ├── Datastructure.txt
 └── .gitignore
 
-How It Works
-
-Users interact with the system through remote user and service provider modules.
-
-Data is passed through preprocessing and feature extraction pipelines.
-
-The trained model predicts fraud probability based on predefined features.
-
-Service providers can view fraud detection ratios, download trained datasets, and analyze system metrics.
-
-The model can be updated or retrained through the admin interface.
-
 Installation
-Step 1: Clone the Repository
+1. Clone the Repository
 git clone https://github.com/Jayanthsadurla/Fraud-Detection-for-Multi-Participant-E-commerce-Systems.git
 
-Step 2: Navigate to the Project Directory
+2. Navigate into the project
 cd Fraud-Detection-for-Multi-Participant-E-commerce-Systems
 
-Step 3: Install Dependencies
-
-Create a virtual environment and install required packages:
-
+3. Install Dependencies
 pip install -r requirements.txt
 
 
-(If the project does not include a requirements file, one can be generated.)
+(If requirements.txt is missing, I can generate one for you.)
 
-Step 4: Apply Database Migrations
+4. Apply Migrations
 python manage.py makemigrations
 python manage.py migrate
 
-Step 5: Run the Server
+5. Run the Server
 python manage.py runserver
 
 Usage
 
-Remote users can register, log in, and submit data for fraud prediction.
+Remote users can register, log in, and submit inputs for fraud prediction
 
-Service providers can view fraud detection metrics, user activity, and model performance.
+Service providers can view fraud ratios, user activity, charts, and training data
 
-Administrators can retrain the model using updated datasets.
+The model can be retrained using updated datasets through the admin panel
 
 Dataset
 
-The project uses custom datasets included in the repository.
-Files such as Datasets.csv and Results.csv are utilized for training and evaluating the fraud detection model.
+The project uses the included structured datasets:
 
-Model Training
+Datasets.csv
 
-Model training is handled within the Django application under the Service Provider section.
-It includes:
+Results.csv
 
-Dataset reading
-
-Preprocessing
-
-Model fitting
-
-Classification evaluation metrics
-
-Download option for trained datasets
+These files support training, testing, and evaluating the fraud detection models.
 
 Future Enhancements
 
-Integration with real-time streaming data.
+Real-time streaming data integration
 
-More complex neural network architectures.
+Advanced neural network architectures
 
-Cross-platform deployment using Docker.
+API-based fraud detection endpoints
 
-Improved UI/UX for users and administrators.
+Docker deployment
 
-API-based prediction endpoints.
+Improved UI/UX designs
