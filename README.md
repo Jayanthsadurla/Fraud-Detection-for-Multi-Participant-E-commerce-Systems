@@ -1,108 +1,169 @@
-Fraud Detection for Multi-Participant E-commerce Systems
-Overview
+# Fraud Detection for Multi-Participant E-commerce Systems
 
-This project implements a fraud detection system designed for multi-participant e-commerce platforms. It analyzes user behavior, transaction patterns, content features, and interaction signals to identify potential fraudulent activities. The system uses machine learning and deep learning techniques to classify fraud-related risks and assist service providers and administrators.
+A machine learning–based fraud detection system designed for **multi-participant e-commerce platforms**.
+This project analyzes user behavior, transaction patterns, interaction signals, and content features to identify fraudulent activity.
+It provides role-based interfaces for remote users and service providers, includes dataset upload tools, model training modules, and fraud ratio visualizations.
 
-The model is trained using structured datasets and provides predictions through user interfaces designed for both remote users and service providers. Additional components include dashboards, registration modules, login pages, fraud ratio reporting, and dataset-driven model training.
+---
 
-Features
+## Table of Contents
 
-Machine learning and deep learning models for fraud prediction
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Backend Setup](#backend-setup)
+- [Using the Application](#Using the Application)
+- [Dataset](#Dataset)
+- [Developer](#Developer)
 
-Multi-participant interaction analysis
+ ---
 
-User authentication and role-based interfaces
+## Overview
 
-Data preprocessing and feature extraction pipelines
+**Fraud Detection for Multi-Participant E-commerce Systems** is designed to detect fraudulent activity across complex e-commerce environments where multiple users interact.
+The system uses machine learning models to classify user activity as legitimate or fraudulent based on behavioral and transactional features.
 
-Fraud ratio visualization dashboards
+Backend interactions are powered by **Django**, combined with structured datasets and trained ML models.
+The frontend includes user and admin panels built with **HTML, CSS, and Django templates**.
 
-Dataset upload and model training interface
+---
 
-Real-time fraud prediction for remote users
+## Features
 
-SQL database support for storing user and fraud data
+- Machine learning and deep learning models for fraud detection
+- Multi-participant user behavior and interaction analysis
+- Remote User and Service Provider role-based access
+- Dataset upload and model training interface
+- Real-time fraud prediction for remote users
+- Fraud ratio visualization for service providers
+- SQL database integration for storing users and activity logs
+- Template-driven user interface
+- Complete Django-based backend architecture
 
-Template-based web interface for both user and admin modules
+---
 
-Technologies Used
+## Tech Stack
+
+**Backend**
 
 Python
 
 Django Framework
 
-HTML and CSS
+SQLite / SQL
 
-SQL Database
+**Machine Learning**
 
-Pandas, NumPy, Scikit-learn
+Pandas
 
-Matplotlib for charts
+NumPy
 
-Project Structure
-A_Multiperspective_Fraud_Detection/
+Scikit-learn
+
+Matplotlib
+
+**Frontend**
+
+HTML
+
+CSS
+
+**Tools**
+
+pip
+
+Virtual Environment (venv)
+
+---
+
+## Project Structure
+
+Fraud Detection for Multi-Participant E-commerce Systems
 │
 ├── a_multiperspective_fraud_detection/
-│   ├── Remote_User/
-│   ├── Service_Provider/
-│   ├── Template/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│   └── manage.py
+│ ├── Remote_User/
+│ ├── Service_Provider/
+│ ├── Template/
+│ ├── settings.py
+│ ├── urls.py
+│ ├── wsgi.py
+│ └── manage.py
 │
 ├── Database/
-│   └── a_multiperspective_fraud_detection.sql
+│ └── a_multiperspective_fraud_detection.sql
 │
 ├── Datastructure.txt
-└── .gitignore
+└── README.md
 
-Installation
-1. Clone the Repository
-git clone https://github.com/Jayanthsadurla/Fraud-Detection-for-Multi-Participant-E-commerce-Systems.git
+---
 
-2. Navigate into the project
-cd Fraud-Detection-for-Multi-Participant-E-commerce-Systems
+## Backend Setup
+## 1. Navigate to the project directory
+cd A_Multiperspective_Fraud_Detection
 
-3. Install Dependencies
-pip install -r requirements.txt
+## 2. Create and activate a virtual environment
+python -m venv venv
+venv\Scripts\activate        # On Windows
+source venv/bin/activate     # On Linux/Mac
 
+## 3. Install dependencies
 
-(If requirements.txt is missing, I can generate one for you.)
+(If requirements.txt is needed, I can generate one.)
 
-4. Apply Migrations
+pip install django pandas numpy scikit-learn matplotlib
+
+## 4. Apply migrations
 python manage.py makemigrations
 python manage.py migrate
 
-5. Run the Server
+## 5. Start the development server
 python manage.py runserver
 
-Usage
 
-Remote users can register, log in, and submit inputs for fraud prediction
+Your backend will run at:
+http://127.0.0.1:8000/
 
-Service providers can view fraud ratios, user activity, charts, and training data
+Using the Application
 
-The model can be retrained using updated datasets through the admin panel
+---
 
-Dataset
+## Remote User
 
-The project uses the included structured datasets:
+Register and log in
+
+Submit fraud detection inputs
+
+View prediction results
+
+---
+
+## Service Provider
+
+View fraud detection ratios
+
+Manage datasets
+
+Train the machine learning model
+
+View user activity status
+
+----
+
+## Dataset
+
+This project uses custom datasets included in the repository such as:
 
 Datasets.csv
 
 Results.csv
 
-These files support training, testing, and evaluating the fraud detection models.
+These datasets are used for training, evaluating, and predicting fraud.
 
-Future Enhancements
+---
 
-Real-time streaming data integration
+## Developer
 
-Advanced neural network architectures
-
-API-based fraud detection endpoints
-
-Docker deployment
-
-Improved UI/UX designs
+Jayanth Sadurla
+B.Tech CSE (Data Science), Class of 2026
+Focused on building AI/ML-powered intelligent applications and scalable backend systems.
