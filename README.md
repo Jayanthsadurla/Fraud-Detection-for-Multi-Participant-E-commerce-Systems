@@ -92,7 +92,6 @@ Fraud Detection for Multi-Participant E-commerce Systems
 ├── Database/
 │ └── a_multiperspective_fraud_detection.sql
 │
-├── Datastructure.txt
 └── README.md
 
 ---
