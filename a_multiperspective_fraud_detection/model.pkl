@@ -1,4 +1,0 @@
-import joblib
-
-# after training your model
-joblib.dump(model, "model.pkl")
